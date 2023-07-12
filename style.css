@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color-1:#2e3192;
+    --color-2:#43eee4;
+    --color-3:#d5d6fd;
+    --caro-b:#2e428b;
+    --foot-color:#223781;
+}
+html{
+    scroll-padding-top: 5.6rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: var(--color-1);
+    z-index: 2;
+}
+.logo{
+    position: relative;
+    height: 60px;
+    width: 80px;
+    top: 15px;
+    left: 60px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.nav-bar{
+    position: absolute;
+    height: 70px;
+    width: 50%;
+    top: 10px;
+    left: 47%;
+    
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar li{
+    margin-left: 35px;
+}
+.nav-bar a{
+    position: relative;
+    top: 25px;
+    font-size: 18px;
+    color: #ffff;
+    text-decoration: none;
+}
+.nav-bar a:hover{
+    color: var(--color-2);
+}
+.spacing{
+    margin-left: 80px;
+}
+.spacing:hover{
+    color: var(--color-2);
+}
+.nav-bar .activ{
+    color: var(--color-2);
+}
+.hamburger{
+    display: none;
+}
+/* home */
+.home{
+    height: 42rem;
+    width: 100%;
+    background-color: var(--color-1);  
+}
+.contains{
+    width: 90%;
+    margin: 10px 10px;
+}
+.carousel{
+    height: 630px;
+    left: 140px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 1s ; 
+}
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents{
+    position: relative;
+    bottom: 40px;
+}
+.contents h1{
+    font-size: 55px;
+    font-weight: 800;
+    color: #ffff;
+}
+
+.contents .btn1{
+    position: relative;
+    padding: 20px;
+    top: 25px;
+    border-radius: 50px;
+    background-color: var(--color-3);
+    color: #fff;
+    transition: 1s;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contents .btn1:hover{
+    background-color: var(--color-2);
+}
+.contents .btn2{
+    position: relative;
+    padding: 20px;
+    top: 25px;
+    border-radius: 50px;
+    background-color: var(--color-3);
+    color: #fff;
+    transition: 1s;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contents .btn2:hover{
+    background-color: var(--color-2);
+}
+
+.home-image{
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.controls{
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 160px;
+    top: 34rem;
+    left: 30px;
+}
+.controls .left{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: var(--caro-b);
+    cursor: pointer;
+}
+.controls .right{
+    padding: 25px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: var(--caro-b);
+    cursor: pointer;
+}
+.controls .left i{
+    position: relative;
+    top: 2px;
+    color: #fff;
+}
+.controls .right i{
+    position: relative;
+    top: 2px;
+    color: #fff;
+}
+.controls .left:hover{
+    background-color: var(--color-2);
+}
+.controls .right:hover{
+    background-color: var(--color-2);
+}
+/* domain */
+.domain{
+    background-color: #fefefd;
+}
+.heading2 h1{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 700;
+}
+.heading2 h1 .ead{
+    color: var(--color-1);
+}
+.heading2 h1 .eef{
+    color: var(--color-2);
+}
+
+.formcontrol{
+    position: relative;
+    left: 100px;
+    height: 70px;
+    width: 70rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    background-color: #fcfcfd;
+}
+.iconed{
+    position: absolute;
+    margin: -45px 75%;
+    cursor: pointer;
+}
+.boxed{
+    position: relative;
+    height: 120px;
+    width: 40%;
+    left: 120px;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    display: flex;
+    gap: 70px;
+}
+.dom1,.dom2,.dom3,.dom4,.dom5,.dom6,.dom7{
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+.dom1 h4,.dom2 h4,.dom3 h4,.dom4 h4,.dom5 h4,.dom6 h4,.dom7 h4{
+    font-size: 20px;
+    color: var(--color-1);
+}
+.boxed .dolo{
+    color: #000;
+    font-weight: 400;
+}
+.boxing .tudo{
+    position: absolute;
+    padding: 17px;
+    width: 10rem;
+    left: 43rem;
+    top: 70rem;
+    border-radius: 50px;
+    background-color: var(--color-2);
+    color: #fff;
+    border: none;
+    transition: 1s;
+    font-weight: 700;
+    text-decoration: none;
+}
+.boxing .tudo:hover{
+    background-color: var(--color-1);
+}
+/* quality */
+.heading3 h1{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+.heading3 h1 .eef1{
+    color: var(--color-2);
+}
+.heading3 p{
+    text-align: center;
+}
+.qua-card{
+    text-align: center;
+}
+.qua-image{
+    position: relative;
+    left: 40px;
+    height: 12rem;
+    width: 14rem;
+    border: 5px solid #43eee4;
+    border-radius: 50%;
+    transition: 1s;
+    
+}
+.qua-card h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+.qua-card .tudo1{
+    height: 40px;
+    width: 120px;
+    background-color: var(--color-2);
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 15px;
+    transition: 1s;
+}
+.qua-card:hover .tudo1{
+    background-color: var(--color-1);
+    color: #fff;
+}
+.qua-card:hover .qua-image{
+    background-color: var(--color-1);
+}
+.qua-card:hover .qua-image img{
+    color: white;
+}
+/* hosting */
+.heading4 h1{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+.heading4 h1 .eef2{
+    color: var(--color-2);
+}
+.heading4 p{
+    text-align: center;
+}
+.hos-card{
+    text-align: center;
+    border: 4px solid #43eee4;
+    transition: 1s;
+}
+.hos-card .chan{
+    color: var(--color-1);
+    transition: 1s;
+}
+.hos-card .ero{
+    font-size: 45px;
+    font-weight: 700;
+}
+.tudo2{
+    height: 30px;
+    width: 140px;
+    border: 1px solid var(--color-1);
+    border-radius: 20px;
+    transition: 1s;
+}
+.tudo2:hover{
+    background-color: var(--color-1);
+    color: #fff;
+}
+.tudo3{
+    position: relative;
+    left: 32%;
+    height: 55px;
+    width: 150px;
+    color: #fff;
+    background-color: var(--color-2);
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+
+}
+.hos-card:hover{
+    border: 4px solid var(--color-1);
+}
+.hos-card:hover .chan{
+    color: var(--color-2);
+}
+.hosted:hover .tudo3{
+    background-color: var(--color-1);
+    transition: 1s;
+}
+/* about */
+.heading5 h1{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+.heading5 h1 .eef3{
+    color: var(--color-2);
+}
+.abou-image{
+    text-align: center;
+}
+.abou-content{
+    font-size: 17px;
+    text-align: center;
+}
+.tudo4{
+    position: relative;
+    height: 55px;
+    width: 150px;
+    color: #fff;
+    background-color: var(--color-2);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+.tudo4:hover{
+    background-color: var(--color-1);
+}
+/* contact */
+.heading6 h1{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+.heading6 h1 .eef4{
+    color: var(--color-2);
+}
+.formed{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 18%;
+}
+.formed input{
+    border: 1px solid var(--color-1);
+    border-radius: 30px;
+}
+.form-control{
+    height: 60px;
+}
+.mess{
+    width: 53.4rem;
+    border: 1px solid var(--color-1);
+    border-radius: 30px;
+}
+.mess::placeholder{
+    position: relative;
+    top: 110px;
+    padding-left: 20px;
+}
+.errored{
+    color: #ff0000;
+    margin-top: 10px;
+}
+.tudo5{
+    position: relative;
+    height: 55px;
+    width: 250px;
+    left: 300px;
+    color: #fff;
+    background-color: var(--color-2);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+}
+.tudo5:hover{
+    background-color: var(--color-1);
+}
+/* footer */
+.footer{
+    background-color: var(--color-1);
+}
+.footed{
+    padding: 2rem;
+}
+.foor1{
+    color: #fff;
+    text-align: center;
+}
+.foor2{
+    color: #fff;
+    text-align: center;
+    
+}
+.foor2 h5{
+    line-height: 2;
+}
+.foor3{
+    text-align: center;
+    color: #fff;
+}
+.foor3 h5{
+    line-height: 2;
+}
+.foor4{
+    color: #fff;
+    text-align: center;
+}
+.foor5{
+    text-align: center;
+    color: #fff;
+}
+
