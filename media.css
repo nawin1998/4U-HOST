@@ -1,4 +1,14 @@
 @media only screen and (min-width:200px) and (max-width: 991px){
+    body{
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    header{
+        position: fixed;
+        top: 0;
+    }
     .nav-bar{
         height: 0;
         position: relative;
@@ -66,7 +76,7 @@
     /* home */
     .contains{
         width: 100%;
-        margin: 10px 10px;
+        margin: 80px 10px;
     }
     .carousel{
         height: 650px;
@@ -87,24 +97,27 @@
     }
     .contents h1{
         position: relative;
-        top: 35px;
-        font-size: 35px;
+        top: 55px;
+        font-size: 30px;
     }
     .home-image img{
         position: relative;
         right: 70px;
-        top: 80px;
+        top: 60px;
         height: 250px;
         width: 300px;
     }
     .contents .btn1{
-        top: 50px;
-        padding: 14px;
+        top: 60px;
+        padding: 6px;
     }
     .contents .btn2{
-        padding: 15px;
+        padding: 7px;
         top: 110px;
-        right: 132px;
+        right: 116px;
+    }
+    .controls{
+        top: 500px;
     }
     /* domain */
     .formcontrol{
@@ -229,9 +242,4 @@
     .foor3 h5{
         font-size: 17px;
     }
-
-
-
-
-
 }
