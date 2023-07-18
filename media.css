@@ -126,45 +126,24 @@
     }
     .boxing{
         width: 100%;
+        
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
     .boxed{
-        
+        margin-left: 20px;
         height: 300px;
-        left: 12px;
+        left: 2px;
+    }
+    .grided{
+        display: grid;
+        grid-template-columns: auto auto auto;
         gap: 5px;
-    }
-    .dom1{
-        position: relative;
-        top: 1px;
-        left: 30px;
-    }
-    .dom2{
-        top: 80px; 
-        left: -55px; 
-    }
-    .dom3{
-        top: 80px; 
-        left: -35px; 
-    }
-    .dom4{
-        top: 80px;
-        left: -25px;  
-    }
-    .dom5{
-        top: 80px;
-        left: -15px;  
-    }
-    .dom6{
-        top: 180px;
-        left: -326px;
-    }
-    .dom7{
-        top: 180px;
-        left: -150px;
     }
     .boxing .tudo{
         position: relative;
-        left: 7rem;
+        left: 0.4rem;
         top: -1.6rem;
     }
     /* quality */

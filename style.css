@@ -202,7 +202,7 @@ header{
     position: relative;
     left: 100px;
     height: 70px;
-    width: 70rem;
+    width: 69rem;
     border: none;
     border-radius: 50px;
     box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
@@ -213,19 +213,28 @@ header{
     margin: -45px 75%;
     cursor: pointer;
 }
+.boxing{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.grided{
+    display: flex;
+    gap: 4rem;
+}
 .boxed{
-    position: relative;
     height: 120px;
     width: 40%;
-    left: 120px;
     box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
     display: flex;
     gap: 70px;
+    align-items: center;
+    justify-content: center;
 }
 .dom1,.dom2,.dom3,.dom4,.dom5,.dom6,.dom7{
-    position: relative;
-    top: 25px;
-    left: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .dom1 h4,.dom2 h4,.dom3 h4,.dom4 h4,.dom5 h4,.dom6 h4,.dom7 h4{
     font-size: 20px;
@@ -240,7 +249,7 @@ header{
     padding: 17px;
     width: 10rem;
     left: 43rem;
-    top: 70rem;
+    top: 70.4rem;
     border-radius: 50px;
     background-color: var(--color-2);
     color: #fff;
@@ -265,22 +274,27 @@ header{
 .heading3 p{
     text-align: center;
 }
+.qua-cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+}
 .qua-card{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 .qua-image{
-    position: relative;
-    left: 40px;
-    height: 12rem;
-    width: 14rem;
+    display: flex;
+    justify-content: center;
     border: 5px solid #43eee4;
     border-radius: 50%;
     transition: 1s;
-    
-}
-.qua-card h5{
-    font-size: 18px;
-    font-weight: 600;
+    height: 12rem;
+    width: 14rem;
+
 }
 .qua-card .tudo1{
     height: 40px;
@@ -302,6 +316,17 @@ header{
 .qua-card:hover .qua-image img{
     color: white;
 }
+
+.qua-card:hover .tudo1{
+    background-color: var(--color-1);
+    color: #fff;
+}
+.qua-card:hover .qua-image{
+    background-color: var(--color-1);
+}
+.qua-card:hover .qua-image img{
+    color: white;
+}
 /* hosting */
 .heading4 h1{
     text-align: center;
@@ -313,6 +338,11 @@ header{
     color: var(--color-2);
 }
 .heading4 p{
+    text-align: center;
+}
+.hoster{
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 .hos-card{
@@ -340,8 +370,6 @@ header{
     color: #fff;
 }
 .tudo3{
-    position: relative;
-    left: 32%;
     height: 55px;
     width: 150px;
     color: #fff;
@@ -349,7 +377,6 @@ header{
     font-weight: 600;
     border: none;
     border-radius: 20px;
-
 }
 .hos-card:hover{
     border: 4px solid var(--color-1);
@@ -404,11 +431,14 @@ header{
 .heading6 h1 .eef4{
     color: var(--color-2);
 }
+.conta{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .formed{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 18%;
 }
 .formed input{
     border: 1px solid var(--color-1);
@@ -432,10 +462,8 @@ header{
     margin-top: 10px;
 }
 .tudo5{
-    position: relative;
     height: 55px;
     width: 250px;
-    left: 300px;
     color: #fff;
     background-color: var(--color-2);
     font-size: 18px;
